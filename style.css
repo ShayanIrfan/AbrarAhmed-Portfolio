@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html{
@@ -30,7 +31,7 @@ header{
     color: aliceblue;
     text-align: center;
     font-family: raleway;
-    font-size: 45px;
+    font-size: 42px;
     width: 100%;
     position: absolute;
     left: 50%;
@@ -46,8 +47,8 @@ header{
     margin-top: 20px;
     background-color: Transparent;
     background-repeat: no-repeat;
-    width: 210px;
-    height: 52px;
+    width: 195px;
+    height: 50px;
     font-family: raleway;
     font-size: 21px;
     color: white;
@@ -81,7 +82,7 @@ header{
     height: 82px;
     background-color: #141414;
     border-bottom: 3px solid #E6A317;
-    z-index: 1;
+    z-index: 2;
 }
 
 .container-2{
@@ -94,7 +95,8 @@ header{
 }
 
 .container-2 h1{
-    margin-top: 21px;
+    margin-top: 18px;
+    font-size: 35px;
 }
 
 .logo-image{
@@ -118,13 +120,8 @@ li a{
     display: inline-block;
     color: #8f9292;
     font-size: 20px;
-    /* padding: 0px 30px; */
-    transition: all .3s;
-}
-
-.lbl {
-    display: block;
     padding: 0px 30px;
+    transition: all .3s;
 }
 
 .cool-link:hover{
@@ -149,7 +146,7 @@ li a{
 }
 
 .about-img img{
-    width: 330px;
+    width: 270px;
     clip-path: polygon(0 0, 75% 0%, 100% 30%, 100% 100%, 25% 100%, 0 70%);
 }
 
@@ -275,7 +272,7 @@ li.py::after{
 
 
 .portfolio{
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .portfolio-head,.portfolio-para{
@@ -290,10 +287,6 @@ li.py::after{
     color: #444649;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.portfolio-content{
-    margin-top: 120px;
 }
 
 .portfolio-info{
@@ -325,7 +318,7 @@ li.py::after{
 }
 
 .portfolio-info h1{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .portfolio-info div img{
@@ -348,7 +341,7 @@ li.py::after{
 .portfolio-info-para{
     font-family: lato;
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -405,7 +398,7 @@ li.py::after{
 }
 
 
-.contact input[type="submit"]{
+#submit{
     margin-bottom: 0;
     float: right;
     background-color: #E6A317;
@@ -422,7 +415,7 @@ li.py::after{
     transition: all 0.5s;
 }
 
-.contact input[type="submit"]:hover{
+#submit:hover{
     background-color: #ffc13c;
 }
 
@@ -458,6 +451,8 @@ li.py::after{
     text-align: center;
     padding: 60px;
     background-color: #141414;
+    /* position: relative;
+    bottom: 0; */
 }
 
 .social-icons{
@@ -466,30 +461,41 @@ li.py::after{
     margin-bottom: 10px;
 }
 
-.fa-facebook-f,.fa-linkedin-in,.fa-google-plus-g,.fa-github{
+.fa-facebook-f,.fa-linkedin-in,.fa-github{
     margin-right: 70px;
     margin-bottom: 40px;
     transition: all .3s;
+    font-size: 35px;
+    color: #ffffff;
 }
 
-.fa-facebook-f:hover, .fa-linkedin-in:hover, .fa-google-plus-g:hover, .fa-github:hover{
+.fa-facebook-f:hover, .fa-linkedin-in:hover, .fa-github:hover{
     color: #E6A317 !important;
 }
 
 .copyright-section{
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     font-weight: bold;
     color: #ffffff;
-    line-height: 50px;
-    margin-bottom: -55px;
+    /* line-height: 50px; */
+    margin-bottom: -15px;
     font-family: raleway;
+}
+
+.copyright-section p {
+    padding-top: 20px;
 }
 
 .copyright-section p span{
     color: #E6A317;
 }
 
+@media (max-width: 1150px){
+    .container-2 h1{
+        margin-left: 50px;
+    }
+}
 
 @media (max-width: 1056px){
     .container-2{
@@ -511,6 +517,7 @@ li.py::after{
 @media (max-width: 921px){
     .checkbtn{
         margin-left: 200px;
+        font-size: 27px;
         display: block;
     }
 
@@ -526,14 +533,40 @@ li.py::after{
         z-index: 1;
     }
 
+    .container-2 h1{
+        margin-left: 0px;
+    }
+
     .container li{
         margin-top: 45px;
         line-height: 60px;
         display: block;
     }
 
+    .about-head h1::after, .skills-head h1::after, .portfolio-head::after, .contact h1::after {
+        width: 50px;
+    }
+
     #check:checked ~ .container{
         left: 0;
+    }
+
+    .contact{
+        width: 500px;
+    }
+
+    .contact h1{
+        font-size: 30px
+    }
+
+    .contact form div label {
+        font-size: 13px;
+    }
+
+    .contact input[type="submit"] {
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
     }
 }
 
@@ -545,8 +578,104 @@ li.py::after{
 }
 
 @media (max-width: 600px){
+    .main-container {
+        height: 63px;
+    }
+
     .container-2{
-        margin-right: -20px;
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    .container-2 h1 {
+        margin-top: 15px;
+        font-size: 27px;
+    }
+
+    .fa-bars {
+        font-size: 21px;
+    }
+
+    .checkbtn {
+        margin-left: 0px;
+        line-height: 63px;
+    }
+
+    .contact{
+        width: 400px;
+    }
+
+    .contact h1, .about h1, .skills h1, .portfolio h1{
+        font-size: 25px;
+    }
+
+    .contact form div label {
+        font-size: 12.5px;
+    }
+
+    .contact input[type="submit"] {
+        width: 87px;
+        height: 31px;
+        font-size: 12px;
+    }
+
+    .about-head h1::after, .skills-head h1::after, .portfolio-head::after, .contact h1::after {
+        width: 40px
+    }
+
+    .about-para, .portfolio-para {
+        font-size: 16px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .skills li {
+        font-size: 14px;
+    }
+
+    .skills {
+        width: 355px;
+    }
+
+    .skills li::after, .skills li::before {
+        height: 13px;
+    }
+
+    .about-img img {
+        width: 170px;
+    }
+
+    .portfolio-info1 {
+        padding-top: 0;
+        width: 280px;
+        margin-left: -140px;
+        height: 158px;
+    }
+
+    .portfolio-info-head h1{
+        font-size: 20px;
+    }
+
+    .portfolio-info-para {
+        font-size: 11.5px;
+    }
+
+    .portfolio-info-button button {
+        width: 88px;
+        height: 35px;
+        font-size: 11.5px;   
+    }
+
+    .portfolio-info div img {
+        width: 280px;
+    }
+
+    .fa-facebook-f,.fa-linkedin-in,.fa-github {
+        font-size: 28px;
+    }
+
+    .copyright-section {
+        font-size: 14px;
     }
 }
 
@@ -555,9 +684,10 @@ li.py::after{
         font-size: 27px;
     }
 
-    #info-button{
+    #info-button {
         font-size: 16px;
-        width: 160px;
+        width: 150px;
+        height: 45px;
     }
 
     .fa-arrow-right{
@@ -576,5 +706,80 @@ li.py::after{
 
     .checkbtn{
         margin-left: 150px;
+    }
+
+    .contact{
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .container-2 {
+        margin-left: 10px;
+    }
+
+    .checkbtn {
+        margin-left: 115px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-container {
+        height: 60px;
+    }
+
+    .container-2{
+        width: 160px;
+        margin-left: 10px;
+    }
+
+    .container-2 h1 {
+        margin-top: 15px;
+        font-size: 25px;
+    }
+
+    .fa-bars {
+        font-size: 19px;
+    }
+
+    .checkbtn {
+        margin-left: 40px;
+        line-height: 60px;
+    }
+
+    .info {
+        font-size: 25px;
+    }
+
+    #info-button {
+        font-size: 15px;
+        width: 140px;
+        height: 43px;
+    }
+
+    .skills li {
+        font-size: 13px;
+    }
+
+    .skills {
+        width: 300px;
+    }
+
+    .skills li::after, .skills li::before {
+        height: 12px;
+    }
+
+    .contact {
+        width: 320px;
+    }
+
+    .fa-facebook-f,.fa-linkedin-in,.fa-github {
+        font-size: 26px;
+    }
+
+    .copyright-section {
+        font-size: 13px;
+        margin-bottom: -20px;
     }
 }

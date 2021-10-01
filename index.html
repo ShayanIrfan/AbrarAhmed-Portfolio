@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/dffe870fb2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_icNZUrgWYffYVtaKE1IKx");
+        })();
+    </script>
 </head>
 
 <body>
@@ -20,21 +26,24 @@
             <i class="fas fa-bars"></i>
         </label>
         <div class="container">
-            <li><a href="#" class="cool-link"><label class="lbl" for="check">About Me</label></a></li>
-            <li><a href="#" class="cool-link"><label class="lbl" for="check">Skills</label></a></li>
-            <li><a href="#" class="cool-link"><label class="lbl" for="check">Portfolio</label></a></li>
-            <li><a href="#" class="cool-link"><label class="lbl" for="check">Contact</label></a></li>
+            <li><a href="#about" class="cool-link" onclick="unCheck();">About Me</a></li>
+            <li><a href="#skill" class="cool-link" onclick="unCheck();">Skills</a></li>
+            <li><a href="#js" class="cool-link" onclick="unCheck();">Portfolio</a></li>
+            <li><a href="#contact" class="cool-link" onclick="unCheck();">Contact</a></li>
         </div>
     </div>
 
     <header>
         <div class="info"> Hello, I'm <span id="name"> Abrar Ahmed. </span> <br> A Computer Systems Engineer.<br>
-            <button onmouseover="rotArrow();" onmouseout="revArrow();" id="info-button"> <a href="#"></a> View my work
-                <i id="arrow" class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <a href="#portfolio"><button onmouseover="rotArrow();" onmouseout="revArrow();" id="info-button"> View my
+                    work <i id="arrow" class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button></a>
         </div>
     </header>
 
-    <div class="about">
+    <div id="about" style="height: 35px;"></div>
+
+    <div class="about" id="about">
         <div class="about-head">
             <h1>ABOUT</h1>
         </div>
@@ -43,19 +52,20 @@
         </div>
         <div class="about-para">
             <p>A voracious learner who believes in hard work and consistency. Besides electrical engineering, <br /> I
-                am creative to study computer science.</p>
+                <span id="skill"> creative to study computer science. </span>
+            </p>
         </div>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="animate-on-scroll">
         <div class="skills-head">
             <h1>SKILLS</h1>
         </div>
         <ul>
-            <li class="html">HTMl & CSS</li>
-            <li class="css">MATLAB</li>
-            <li class="py">Python</li>
-            <li class="js">Research</li>
+            <li id="html">HTMl & CSS</li>
+            <li id="css">MATLAB</li>
+            <li id="py">Python</li>
+            <li id="js">Research</li>
         </ul>
     </div>
 
@@ -70,87 +80,76 @@
         </div>
         <div class="portfolio-content">
             <div class="portfolio-info">
-                <div class="portfolio-info1" onmouseover="imgLighten();" onmouseout="imgRecover();">
+                <div class="portfolio-info1" onmouseover="imgLighten(this);" onmouseout="imgRecover(this);">
                     <div class="portfolio-info-head">
-                        <h1> Periodic Table</h1>
+                        <h1> A Smart Facility Control of a Smart Society </h1>
                     </div>
                     <div class="portfolio-info-para">
-                        <p>Made this Periodic Table as an Assignment using HTML & CSS.</p>
+                        <p>This project is introduced the concept of energy trading where shared facility services (SFS)
+                            are powered with electricity from resident prosumers using an auction process.</p>
                     </div>
                     <div class="portfolio-info-button">
-                        <button>View Source Code</button>
+                        <a href="https://github.com/Abrar-Ahmed-96/Energy-Trading-for-Shared-Facility-Con"><button>View
+                                Source Code</button></a>
                     </div>
                 </div>
                 <div>
-                    <img id="image" src="images/1stproject.png" alt="">
+                    <img src="images/1stproject.jpeg" alt="">
                 </div>
             </div>
-            <!-- <div class="portfolio-info">
-                <div class="portfolio-info2">
-                    <div class="portfolio-info-head">
-                        <h1>Registration Form</h1>
+
+            <div class="portfolio-content">
+                <div class="portfolio-info">
+                    <div class="portfolio-info1" onmouseover="imgLighten(this);" onmouseout="imgRecover(this);">
+                        <div class="portfolio-info-head">
+                            <h1> Continuous Combinatorial Auctions for Electricity Markets </h1>
+                        </div>
+                        <div class="portfolio-info-para">
+                            <p>In progress...</p>
+                        </div>
+                        <div class="portfolio-info-button">
+                            <a
+                                href="https://github.com/Abrar-Ahmed-96/Sustainable-Combinatorial-Auctions-in-Electricity-Markets"><button>View
+                                    Source Code</button></a>
+                        </div>
                     </div>
-                    <div class="portfolio-info-para">
-                        <p>Made this Form as an Assignment using HTML & CSS.</p>
-                    </div>
-                    <div class="portfolio-info-button">
-                        <button>Web Link</button>
-                        <button>Link To GitHub</button>
+                    <div>
+                        <img src="images/2ndproject.jpeg" alt="">
                     </div>
                 </div>
-                <div>
-                    <img src="images/2ndproject.png" alt="">
-                </div>
+
             </div>
-            <div class="portfolio-info">
-                <div class="portfolio-info3">
-                    <div class="portfolio-info-head">
-                        <h1>Website</h1>
-                    </div>
-                    <div class="portfolio-info-para">
-                        <p>Made this Homepage of Saylani as an Assignment using HTML & CSS.</p>
-                    </div>
-                    <div class="portfolio-info-button">
-                        <button>Web Link</button>
-                        <button>Link To GitHub</button>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/3rdproject.png" alt="">
-                </div>
-            </div> -->
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact-head">
             <h1>CONTACTS</h1>
         </div>
-        <form method="post" action="contact-form-handler.php">
+        <form onsubmit="return false">
             <div>
-                <input type="text" name="name" required />
+                <input type="text" id="from-name" required />
                 <label>Name</label>
             </div>
             <div>
-                <input type="text" name="email" required />
+                <input type="text" id="email" required />
                 <label>Email</label>
             </div>
             <div>
-                <textarea name="message" required></textarea>
+                <textarea id="msg" required></textarea>
                 <label>Message</label>
             </div>
             <div>
-                <input type="submit" value="Submit">
+               <button id="submit" onclick="sendMail();">Submit</button>
             </div>
         </form>
     </div>
 
     <div class="footer">
         <div class="social-icons">
-            <i class="fab fa-facebook-f" style="font-size:35px;color:#ffffff"></i>
-            <i class="fab fa-linkedin-in" style="font-size:35px;color:#ffffff"></i>
-            <i class="fab fa-google-plus-g" style="font-size:35px;color:#ffffff"></i>
-            <i class="fab fa-github" style="font-size:35px;color:#ffffff"></i>
+            <a href="https://www.facebook.com/abrar.tumbi"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/abrar-ahmed95"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Abrar-Ahmed-96"><i class="fab fa-github"></i></a>
         </div>
         <div class="copyright-section">
             <p>Copyright © 2021 by <span> ABRAR AHMED</span></p>
