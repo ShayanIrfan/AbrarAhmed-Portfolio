@@ -563,7 +563,7 @@ li.py::after{
         font-size: 13px;
     }
 
-    .contact input[type="submit"] {
+    .contact #submit {
         width: 100px;
         height: 35px;
         font-size: 13px;
@@ -613,7 +613,7 @@ li.py::after{
         font-size: 12.5px;
     }
 
-    .contact input[type="submit"] {
+    .contact #submit {
         width: 87px;
         height: 31px;
         font-size: 12px;
@@ -719,6 +719,10 @@ li.py::after{
         margin-left: 10px;
     }
 
+    .info {
+        font-size: 23px;
+    }
+
     .checkbtn {
         margin-left: 115px;
     }
@@ -746,10 +750,6 @@ li.py::after{
     .checkbtn {
         margin-left: 40px;
         line-height: 60px;
-    }
-
-    .info {
-        font-size: 25px;
     }
 
     #info-button {
