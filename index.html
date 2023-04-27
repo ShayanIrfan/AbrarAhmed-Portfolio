@@ -1,184 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abrar Ahmed</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.PNG">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/dffe870fb2.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.PNG" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/dffe870fb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("user_icNZUrgWYffYVtaKE1IKx");
-        })();
+      (function () {
+        emailjs.init("user_icNZUrgWYffYVtaKE1IKx");
+      })();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-container">
-        <div class="container-2">
-            <h1><span class="lastname">A</span>brar <span class="lastname">A</span>hmed</h1>
-        </div>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="container">
-            <li><a href="#about" class="cool-link" onclick="unCheck();">About Me</a></li>
-            <li><a href="#skill" class="cool-link" onclick="unCheck();">Skills</a></li>
-            <li><a href="#js" class="cool-link" onclick="unCheck();">Portfolio</a></li>
-            <li><a href="#contact" class="cool-link" onclick="unCheck();">Contact</a></li>
-        </div>
+      <div class="container-2">
+        <h1>
+          <span class="lastname">A</span>brar
+          <span class="lastname">A</span>hmed
+        </h1>
+      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="container">
+        <li>
+          <a href="#about" class="cool-link" onclick="unCheck();">About Me</a>
+        </li>
+        <li>
+          <a href="#skill" class="cool-link" onclick="unCheck();">Skills</a>
+        </li>
+        <li>
+          <a href="#js" class="cool-link" onclick="unCheck();">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" class="cool-link" onclick="unCheck();">Contact</a>
+        </li>
+      </div>
     </div>
 
     <header>
-        <div class="info"> I'm <span id="name"> creative, </span> <br> to learn Distributed Artificial Intelligence in Computer Science and Engineering.<br>
-            <a href="#js"><button onmouseover="rotArrow();" onmouseout="revArrow();" id="info-button"> View my
-                    work <i id="arrow" class="fa fa-arrow-right" aria-hidden="true"></i>
-                </button></a>
-        </div>
+      <div class="info">
+        I'm <span id="name"> creative, </span> <br />
+        to learn Distributed Artificial Intelligence in Computer Science and
+        Engineering.<br />
+        <a href="#js"
+          ><button
+            onmouseover="rotArrow();"
+            onmouseout="revArrow();"
+            id="info-button"
+          >
+            View my work
+            <i
+              id="arrow"
+              class="fa fa-arrow-right"
+              aria-hidden="true"
+            ></i></button
+        ></a>
+      </div>
     </header>
 
-    <div id="about" style="height: 35px;"></div>
+    <div id="about" style="height: 35px"></div>
 
     <div class="about" id="about">
-        <div class="about-head">
-            <h1>ABOUT</h1>
-        </div>
-        <div class="about-img">
-            <img src="images/profile.jpg" alt="">
-        </div>
-        <div class="about-para">
-            <p>A voracious learner who believes in hard work and consistency. Besides electrical engineering, <br /> I
-                <span id="skill"> creative to study computer science. </span>
-            </p>
-        </div>
+      <div class="about-head">
+        <h1>ABOUT</h1>
+      </div>
+      <div class="about-img">
+        <img src="images/profile.jpg" alt="" />
+      </div>
+      <div class="about-para">
+        <p>
+          A Computer Science Graduate with 3 years of research and development
+          experience. A voracious learner who believes in hard work and
+          consistency. MS Research Interests: Federated Learning, Privacy
+          Preserving AI, Client Selection Incentive Schemes BS Research: Smart
+          Grids, Energy Systems.
+        </p>
+      </div>
     </div>
 
     <div class="skills" id="animate-on-scroll">
-        <div class="skills-head">
-            <h1>SKILLS</h1>
-        </div>
-        <ul>
-            <li id="html">HTMl & CSS</li>
-            <li id="css">MATLAB</li>
-            <li id="py">Python</li>
-            <li id="js">Research</li>
-        </ul>
+      <div class="skills-head">
+        <h1>SKILLS</h1>
+      </div>
+      <ul>
+        <li class="deep-learning">Deep Learning</li>
+        <li class="computer-vision">Computer Vision</li>
+        <li class="privacy-preserving">Privacy Preserving</li>
+        <li class="ai">AI</li>
+        <li class="tensorflow">Tensorflow/Keras</li>
+        <li class="py">Python</li>
+        <li class="research">Research</li>
+        <li class="teaching">Teaching</li>
+      </ul>
     </div>
 
     <div class="portfolio">
-        <div class="portfolio-head">
-            <h1>PORTFOLIO</h1>
-        </div>
-        <div class="portfolio-para">
-            <p>Listed below are some Assignmentts I've been working on lately.<br>
-                Hope You Like Them :)
-            </p>
-        </div>
-        <div class="portfolio-content">
-            <div class="portfolio-info">
-                <div class="portfolio-info1" onmouseover="imgLighten(this);" onmouseout="imgRecover(this);">
-                    <div class="portfolio-info-head">
-                        <h1> A Smart Facility Control of a Smart Society </h1>
-                    </div>
-                    <div class="portfolio-info-para">
-                        <p>This project is introduced the concept of energy trading where shared facility services (SFS)
-                            are powered with electricity from resident prosumers using an auction process.</p>
-                    </div>
-                    <div class="portfolio-info-button">
-                        <a href="https://github.com/Abrar-Ahmed-96/Energy-Trading-for-Shared-Facility-Con"><button>View
-                                Source Code</button></a>
-                    </div>
-                </div>
-                <div>
-                    <img src="images/1stproject.jpeg" alt="">
-                </div>
+      <div class="portfolio-head">
+        <h1>PORTFOLIO</h1>
+      </div>
+      <div class="portfolio-para">
+        <p>
+          Listed below are some Assignmentts I've been working on lately.<br />
+          Hope You Like Them :)
+        </p>
+      </div>
+      <div class="portfolio-content">
+        <div class="portfolio-info">
+          <div
+            class="portfolio-info1"
+            onmouseover="imgLighten(this);"
+            onmouseout="imgRecover(this);"
+          >
+            <div class="portfolio-info-head">
+              <h1>A Smart Facility Control of a Smart Society</h1>
             </div>
-
-            <div class="portfolio-content">
-                <div class="portfolio-info">
-                    <div class="portfolio-info1" onmouseover="imgLighten(this);" onmouseout="imgRecover(this);">
-                        <div class="portfolio-info-head">
-                            <h1> Continuous Combinatorial Auctions for Electricity Markets </h1>
-                        </div>
-                        <div class="portfolio-info-para">
-                            <p>In progress...</p>
-                        </div>
-                        <div class="portfolio-info-button">
-                            <a
-                                href="https://github.com/Abrar-Ahmed-96/Sustainable-Combinatorial-Auctions-in-Electricity-Markets"><button>View
-                                    Source Code</button></a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/2ndproject.jpeg" alt="">
-                    </div>
-                </div>
-
-                <div class="portfolio-content">
-                    <div class="portfolio-info">
-                        <div class="portfolio-info1" onmouseover="imgLighten(this);" onmouseout="imgRecover(this);">
-                            <div class="portfolio-info-head">
-                                <h1> Convolutional Neural Network for Image Classification </h1>
-                            </div>
-                            <div class="portfolio-info-para">
-                                <p>For computer vision, Convolutional Neural Networks extract features to classify images.</p>
-                            </div>
-                            <div class="portfolio-info-button">
-                                <a
-                                    href="https://github.com/Abrar-Ahmed-96/Convolution-Neural-Network-for-Image-Classification"><button>View
-                                        Source Code</button></a>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="images/3rdproject.jpeg" alt="">
-                        </div>
-                    </div>
-
+            <div class="portfolio-info-para">
+              <p>
+                This project is introduced the concept of energy trading where
+                shared facility services (SFS) are powered with electricity from
+                resident prosumers using an auction process.
+              </p>
             </div>
+            <div class="portfolio-info-button">
+              <a
+                href="https://github.com/Abrar-Ahmed-96/Energy-Trading-for-Shared-Facility-Con"
+                ><button>View Source Code</button></a
+              >
+            </div>
+          </div>
+          <div>
+            <img src="images/1stproject.jpeg" alt="" />
+          </div>
         </div>
+
+        <div class="portfolio-info">
+          <div
+            class="portfolio-info1"
+            onmouseover="imgLighten(this);"
+            onmouseout="imgRecover(this);"
+          >
+            <div class="portfolio-info-head">
+              <h1>Continuous Combinatorial Auctions for Electricity Markets</h1>
+            </div>
+            <div class="portfolio-info-para">
+              <p>In progress...</p>
+            </div>
+            <div class="portfolio-info-button">
+              <a
+                href="https://github.com/Abrar-Ahmed-96/Sustainable-Combinatorial-Auctions-in-Electricity-Markets"
+                ><button>View Source Code</button></a
+              >
+            </div>
+          </div>
+          <div>
+            <img src="images/2ndproject.jpeg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-info">
+          <div
+            class="portfolio-info1"
+            onmouseover="imgLighten(this);"
+            onmouseout="imgRecover(this);"
+          >
+            <div class="portfolio-info-head">
+              <h1>Convolutional Neural Network for Image Classification</h1>
+            </div>
+            <div class="portfolio-info-para">
+              <p>
+                For computer vision, Convolutional Neural Networks extract
+                features to classify images.
+              </p>
+            </div>
+            <div class="portfolio-info-button">
+              <a
+                href="https://github.com/Abrar-Ahmed-96/Convolution-Neural-Network-for-Image-Classification"
+                ><button>View Source Code</button></a
+              >
+            </div>
+          </div>
+          <div>
+            <img src="images/3rdproject.jpeg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-info">
+          <div
+            class="portfolio-info1"
+            onmouseover="imgLighten(this);"
+            onmouseout="imgRecover(this);"
+          >
+            <div class="portfolio-info-head center">
+              <h1>Object Detection Using Federated Learning</h1>
+            </div>
+          </div>
+          <div>
+            <img src="images/4thproject.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-info">
+          <div
+            class="portfolio-info1"
+            onmouseover="imgLighten(this);"
+            onmouseout="imgRecover(this);"
+          >
+            <div class="portfolio-info-head center">
+              <h1>Federated Learning Based Energy Demand Prediction</h1>
+            </div>
+          </div>
+          <div>
+            <img src="images/5thproject.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-info">
+          <div
+            class="portfolio-info1"
+            onmouseover="imgLighten(this);"
+            onmouseout="imgRecover(this);"
+          >
+            <div class="portfolio-info-head center">
+              <h1>Aggregation Strategies in Federated Learning</h1>
+            </div>
+          </div>
+          <div>
+            <img src="images/6thproject.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="portfolio-info">
+          <div
+            class="portfolio-info1"
+            onmouseover="imgLighten(this);"
+            onmouseout="imgRecover(this);"
+          >
+            <div class="portfolio-info-head center">
+              <h1>
+                Fair and Reliable Incentive Mechanism For Federated Learning
+              </h1>
+            </div>
+          </div>
+          <div>
+            <img src="images/7thproject.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="contact" id="contact">
-        <div class="contact-head">
-            <h1>CONTACTS</h1>
+      <div class="contact-head">
+        <h1>CONTACTS</h1>
+      </div>
+      <form onsubmit="return false">
+        <div>
+          <input type="text" id="from-name" required />
+          <label>Name</label>
         </div>
-        <form onsubmit="return false">
-            <div>
-                <input type="text" id="from-name" required />
-                <label>Name</label>
-            </div>
-            <div>
-                <input type="text" id="email" required />
-                <label>Email</label>
-            </div>
-            <div>
-                <textarea id="msg" required></textarea>
-                <label>Message</label>
-            </div>
-            <div>
-               <button id="submit" onclick="sendMail();">Submit</button>
-            </div>
-        </form>
+        <div>
+          <input type="text" id="email" required />
+          <label>Email</label>
+        </div>
+        <div>
+          <textarea id="msg" required></textarea>
+          <label>Message</label>
+        </div>
+        <div>
+          <button id="submit" onclick="sendMail();">Submit</button>
+        </div>
+      </form>
     </div>
 
     <div class="footer">
-        <div class="social-icons">
-            <a href="https://www.facebook.com/abrar.tumbi"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/abrar-ahmed95"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Abrar-Ahmed-96"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="copyright-section">
-            <p>Copyright © 2021 by <span> ABRAR AHMED</span></p>
-            <P>This site is built with HTML & CSS. All fonts are served up via Google Fonts.</P>
-        </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/abrar.tumbi"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/abrar-ahmed95"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/Abrar-Ahmed-96"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <div class="copyright-section">
+        <p>Copyright © 2021 by <span> ABRAR AHMED</span></p>
+        <p>
+          This site is built with HTML & CSS. All fonts are served up via Google
+          Fonts.
+        </p>
+      </div>
     </div>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
